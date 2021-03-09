@@ -1,3 +1,4 @@
+import 'package:ds_freezed/demoimmutable.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -49,6 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+
+
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -57,6 +60,53 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
+
+    methobParams1('dafa');
+    methobParams2();
+    methobParams3('value:value:');
+
+    final abc = Union.error('123');
+    final abc1 = Union.loading();
+    final ab2c = Union(122);
+    // đọc
+    abc.when((value) {
+
+    },
+        loading: (){
+
+    }, error: (value){
+
+    });
+    // đọc và sửa
+    abc.map((value) => value.copyWith(value: 123), loading: loading, error: error);
+
+    // lựa chọn option
+    abc.maybeMap((value) => value.copyWith(), orElse: (){
+
+    });
+
+    abc.maybeWhen((value) => value, error: (value){
+
+    }, orElse: (){
+
+    }, loading: (){
+
+    });
+
+
+
+  }
+
+  void methobParams1(String value){
+
+  }
+
+  void methobParams2({String value}){
+
+  }
+
+  void methobParams3([String value]){
+
   }
 
   @override

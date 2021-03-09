@@ -1,4 +1,4 @@
-name: bloc_with_freezed
+name: ds_freezed
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -18,13 +18,12 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^6.1.3
-  freezed_annotation: ^0.14.0
+  freezed_annotation: ^0.12.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -34,8 +33,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  freezed: ^0.14.0+1
-  build_runner: ^1.11.5
+  build_runner:
+  freezed: ^0.12.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

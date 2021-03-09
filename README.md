@@ -1,4 +1,4 @@
-# bloc_with_freezed
+# ds_freezed
 
 A new Flutter project.
 

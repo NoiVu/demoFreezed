@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bloc_with_freezed">
+    package="com.example.ds_freezed">
    <application
-        android:label="bloc_with_freezed"
+        android:label="ds_freezed"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
